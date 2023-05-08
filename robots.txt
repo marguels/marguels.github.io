@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://marguels.github.io/al-folio/sitemap.xml
+Sitemap: https://marguels.github.io/sitemap.xml

@@ -13,7 +13,7 @@
     <title>Classification problems: a look in depth at the <i>k</i>-NN Classifier
  | Margherita  Gambino</title>
     <meta name="author" content="Margherita  Gambino">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+    <meta name="description" content="Welcome to my personal website! :wave:
 ">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -133,6 +133,8 @@
         ·  
         <a href="/blog/category/data-science">
           <i class="fas fa-tag fa-sm"></i> data-science</a>  
+          <a href="/blog/category/machine-learning">
+          <i class="fas fa-tag fa-sm"></i> machine-learning</a>  
           
 
     </p>
@@ -192,7 +194,7 @@ In statistics, the concept of feature is related to that of a <em>explanatory va
 How we measure such distance and the rule we use to determine the neighbours make up for different algorithms.</p>
 </blockquote>
 
-<p>In its simplest implementation, introducing a new point of data the NNS will find the neighbour at the shortest distance from it (the most similar in a feature space) and will assign its same class to the new point.</p>
+<p>In its simplest implementation, introducing a new point of data the NNS will find the neighbour at the shortest Euclidean distance from it (the most similar in a feature space) and will assign its same class to the new point.</p>
 
 <p>This algorithm can be extended to an arbitrary number of neighbours, <em>k</em>, from which, the <strong>k-Nearest Neighbours</strong> classification rule.</p>
 
@@ -239,7 +241,8 @@ When considering more than one neighbour, we use <strong>voting</strong> to assi
         <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
         
         <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">X</span><span class="p">:</span>
-            <span class="n">distances</span> <span class="o">=</span> <span class="p">((</span><span class="n">self</span><span class="p">.</span><span class="n">X</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">).</span><span class="nf">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="c1">#calculate Euclidean distance
+</span>            <span class="n">distances</span> <span class="o">=</span> <span class="p">((</span><span class="n">self</span><span class="p">.</span><span class="n">X</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">).</span><span class="nf">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
             <span class="n">k_smallest_distances</span> <span class="o">=</span> <span class="n">distances</span><span class="p">.</span><span class="nf">argsort</span><span class="p">()[:</span><span class="n">self</span><span class="p">.</span><span class="n">k</span><span class="p">]</span>
             <span class="n">closest_classes</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">k_smallest_distances</span><span class="p">]</span>
             <span class="n">occurrences_per_class</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">bincount</span><span class="p">(</span><span class="n">closest_classes</span><span class="p">,</span> <span class="n">minlength</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">n_classes</span><span class="p">)</span>
@@ -547,7 +550,7 @@ Number of classes: 2
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Margherita  Gambino. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+        © Copyright 2023 Margherita  Gambino. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>

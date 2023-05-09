@@ -4,7 +4,7 @@ title: >
     Classification problems: a look in depth at the <i>k</i>-NN Classifier
 date: 2023-04-25 10:14:00-0400
 description: 
-categories: data-science
+categories: data-science machine-learning
 giscus_comments: true
 related_posts: false
 toc:
@@ -40,7 +40,7 @@ For example, in the above image, without knowing anything about too specific abo
 > The **Nearest Neighbours search** is a classification rule that makes a prediction on a new data point finding its nearest neighbour, interpreting cartesian distance as a measure of similarity.
 How we measure such distance and the rule we use to determine the neighbours make up for different algorithms.
 
-In its simplest implementation, introducing a new point of data the NNS will find the neighbour at the shortest distance from it (the most similar in a feature space) and will assign its same class to the new point.
+In its simplest implementation, introducing a new point of data the NNS will find the neighbour at the shortest Euclidean distance from it (the most similar in a feature space) and will assign its same class to the new point.
 
 This algorithm can be extended to an arbitrary number of neighbours, *k*, from which, the **k-Nearest Neighbours** classification rule.
 
@@ -83,6 +83,7 @@ class KNNClassifier():
         res = []
         
         for x in X:
+            #calculate Euclidean distance
             distances = ((self.X - x)**2).sum(axis=1)
             k_smallest_distances = distances.argsort()[:self.k]
             closest_classes = self.y[k_smallest_distances]

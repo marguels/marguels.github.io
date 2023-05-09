@@ -23,7 +23,7 @@ My name is Margherita and I'm an all round geek :woman_scientist:
 :woman_technologist: Currently, I work as a **Software Engineer** at [Elsevier](https://www.elsevier.com/), empowering researchers navigating the intricate world of publications through [Scopus](https://www.scopus.com/home.uri).\
 I have been working in this stimulating team for over 3 years as a Back end developer, embarking in the journey of migrating a 15 years old Monolithic application and building awesome micro services and entire full-stack features.
 
-:milky_way: I have a **background** in Theoretical Physic (M.Sc.), with a research thesis in Cosmology investigating the Quantum fluctuations caused by Inflation in the early universe. It's a fascinating world sitting in the intersection between the big philosophical questions around the interpretation of Quantum Mechanics, General Relativity and *of course* some incomprehensible non-equilibrium mathematical models.
+:milky_way: I have a background in **Theoretical Physics** (M.Sc.), with a research thesis in Cosmology investigating the Quantum fluctuations caused by Inflation in the early universe. It's a fascinating world sitting in the intersection between the big philosophical questions around the interpretation of Quantum Mechanics, General Relativity and *of course* some incomprehensible non-equilibrium mathematical models.
 
 :bar_chart: I'm also studying part-time to get a better grip around the world of **Data Science**. I've always loved looking at numbers and trying to make sense out of them. This world gives me a chance to converge all my **passions**: answering big questions with the help of math and coding.
 

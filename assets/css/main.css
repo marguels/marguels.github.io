@@ -198,10 +198,14 @@ blockquote {
   margin-bottom: 5px;
   margin-top: 5px;
   font-family: monospace;
+  font-size: small;
 }
 .profile .address p {
   display: inline-block;
   margin: 0;
+}
+.profile .address .emoji {
+  width: fit-content;
 }
 
 .profile.float-right {

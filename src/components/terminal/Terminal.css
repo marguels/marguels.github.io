@@ -1,0 +1,46 @@
+.terminal {
+    background-color: var(--raisin-black-2);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 3rem auto;
+    box-shadow: var(--pine-green) 0 0 50px;
+    border-radius: 10px;
+  }
+  
+  .output {
+    height: 350px;
+    overflow-y: auto;
+    scrollbar-color: var(--gunmetal);
+    width: 100%;
+  }
+
+  .command {
+    color: var(--pine-green);
+  }
+
+  .ascii {
+    line-height: 1.2;
+  }
+  
+  .terminal-input {
+    width: 100%;
+    background-color: var(--gunmetal);
+    font-family: "SaX Mono", monospace;
+    font-size: medium;
+    border: none;
+    color: inherit;
+    padding: 10px;
+    border-top: 2px solid var(--lilac);
+  }
+
+  .terminal-input:focus {
+    outline: none;
+  }

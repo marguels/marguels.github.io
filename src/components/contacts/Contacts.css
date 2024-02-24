@@ -1,0 +1,26 @@
+.contacts-section {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--indigo);
+    padding: 1em;
+    transition: color 0.25s;
+}
+
+.contact-text {
+    color: var(--seasalt);
+    visibility: hidden;
+}
+
+.contact-icon:hover  .contact-text{
+    /* display: inline; */
+    visibility: visible;
+}

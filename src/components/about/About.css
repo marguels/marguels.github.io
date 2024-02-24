@@ -1,0 +1,18 @@
+.about {
+    padding: 4em 0;
+}
+
+.aboutSection {
+    gap: 2em;
+    text-align: left;
+}
+
+.propic {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 1em 2em 1em 0em;
+    border-radius: 50%;
+    background-color: var(--black);
+    box-shadow: -5px 10px 20px 5px var(--pine-green);
+}

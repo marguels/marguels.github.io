@@ -1,0 +1,143 @@
+:root {
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    font-family: "Sax Mono", "Recursive Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    
+    --black: #000000ff;
+    --gunmetal: #2a2f39ff;
+    --raisin-black: #20242bff;
+    --raisin-black-2: #1E2025ff;
+    --french-gray: #a6a3a8ff;
+    --lilac: #866D8B;
+    --gamboge: #f19b13ff;
+    --light-green: #95df71ff;
+    --pine-green: #25ccb9;
+    --seasalt: #f7f7f8ff;
+    --indigo: #646cff;
+    --naples-yellow: #fde36aff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--raisin-black);
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Recursive Sans";
+    src: url("./assets/fonts/recursive.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SaX Mono";
+    src: url("./assets/fonts/saxmono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+    text-wrap: none;
+}
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* min-width: 320px; */
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--raisin-black);
+    color: var(--seasalt);
+}
+
+nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: var(--raisin-black-2);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px var(--lilac);
+}
+
+main {
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: "Recursive Sans";
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: "Recursive Sans";
+    color: var(--pine-green);
+    padding-bottom: 0.5rem;
+    box-shadow: 0px 20px 10px -15px var(--lilac);
+    margin-bottom: 2em;
+}
+
+h3 {
+    font-family: "Recursive Sans";
+    color: var(--gamboge);
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--raisin-black-2);
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: var(--indigo);
+}
+
+.highlight {
+    color: var(--gamboge);
+  }
+
+  .container {
+    padding: 4em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+footer {
+    padding: 2em 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--raisin-black-2);
+    color: var(--french-gray);
+}

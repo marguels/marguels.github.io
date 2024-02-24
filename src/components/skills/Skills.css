@@ -1,0 +1,52 @@
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--indigo);
+    box-shadow: 0 0 5px var(--indigo);
+}
+
+.icon-container:hover {
+    color: var(--pine-green);
+}
+
+.icon-container:focus {
+    color: var(--gamboge);
+    outline: none;
+}
+
+.writing-skills {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.cv-button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--pine-green);
+    border: var(--indigo) 2px solid;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--pine-green);
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.cv-button:hover {
+    background-color: var(--indigo);
+    color: var(--raisin-black-2);
+}

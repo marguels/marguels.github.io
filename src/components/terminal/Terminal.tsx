@@ -80,7 +80,7 @@ const Terminal = () => {
             I have a passion for learning and I'm always looking for new
             challenges.
             <br />
-            Check the <a href="#about">about section</a> and the <a href="skills">skills section</a> below to know more
+            Check the <a href="#about">about section</a> and the <a href="# skills">skills section</a> below to know more
             about me and what I know!
           </div>
         );

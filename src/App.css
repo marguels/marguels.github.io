@@ -1,5 +1,4 @@
 #root {
-    /* padding: 2rem; */
     text-align: center;
 }
 
@@ -21,7 +20,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    margin-bottom: 4em;
+    margin: 4em 4em;
 }
 
 .logo {
@@ -32,3 +31,16 @@ main {
 .card {
     padding: 2em;
 }
+
+.name {
+    background: radial-gradient(ellipse at bottom, var(--gamboge), var(--indigo), var(--pine-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width: 480px){
+    .navBar {
+        gap: 3em;
+    }
+    
+  }

@@ -30,7 +30,7 @@ function App() {
       </nav>
       <main>
         <div className="hero">
-          <h1>Hello world, I'm Margherita</h1>
+          <h1>Hello world,<br/> I'm <span className="name">Margherita</span></h1>
           <p>
             I love to create things with code.
             <br />I love physics, math and all sorts of logic puzzles to crack.

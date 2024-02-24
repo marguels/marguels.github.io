@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Terminal.css";
+import { translateAscii } from "../../utils/utils";
 
 type Output = {
   text: React.ReactNode;
@@ -9,9 +10,27 @@ type Output = {
 const Terminal = () => {
   const initialOutput = [
     {
-      text: `𝕎elcome to my portfolio! 🚀
-  Type "help" for available commands.`,
-    },
+      text: <div>
+        <div className="ascii-container">
+          {translateAscii`
+ _    _      _ _                             _     _ _
+| |  | |    | | |                           | |   | | |
+| |__| | ___| | | ___    __      _____  _ __| | __| | |
+|  __  |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _  | |
+| |  | |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|
+|_|  |_|\___|_|_|\___( )   \_/\_/ \___/|_|  |_|\__,_(_)
+                     |/                                `}
+          {translateAscii`      
+  _____
+/      \\@
+| • ◡ • |\\
+'───────'@
+//______\\
+        `}
+        </div>
+      𝕎elcome to my portfolio! 🚀<br/>
+      Type "help" for available commands.
+      </div>},
   ];
   const [input, setInput] = useState<string>("");
   const [output, setOutput] = useState<Output[]>(initialOutput);
@@ -37,19 +56,6 @@ const Terminal = () => {
     }
   };
 
-  const translateAscii = (ascii: TemplateStringsArray) => {
-    return (
-      <div className="ascii">
-        {ascii.raw[0]
-          .replace(/^\n/, "")
-          .split("\n")
-          .map((line) => {
-            return line.replace(/ /g, "\u00A0");
-          })
-          .join("\n")}
-      </div>
-    );
-  };
 
   const processCommand = (command: string) => {
     let newOutput;
@@ -66,13 +72,22 @@ const Terminal = () => {
       case "about":
         newOutput = (
           <div>
-            {translateAscii`
-    ___  _                 _                     _____
-   / _ \| |               | |                  /      \\@   ⌠   ⚛️  📚  
-  / /_\ \ |__   ___  _   _| |_                 | • ◡ • |\   ⌡ 🧮  🧩  📖
-  |  _  | '_ \ / _ \| | | | __|              ┌─────────┐\\     
-  | | | | |_) | (_) | |_| | |_               |    O    |_
-  \_| |_/_.__/ \___/ \__,_|\__|              |_________|/`}
+          <div className="ascii-container">
+  {translateAscii`
+     ___  _                 _
+    / _ \| |               | |
+   / /_\ \ |__   ___  _   _| |_
+   |  _  | '_ \ / _ \| | | | __|
+   | | | | |_) | (_) | |_| | |_
+   \_| |_/_.__/ \___/ \__,_|\__|`}
+  {translateAscii`
+    _____
+  /      \\@   ⌠   ⚛️  📚  
+  | • ◡ • |\   ⌡ 🧮  🧩  📖
+┌─────────┐\\       
+|    O    |_
+|_________|/`}
+</div>
             <br />
             I'm a <span className="highlight">software developer</span> who
             loves to create things with code.

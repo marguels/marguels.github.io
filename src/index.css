@@ -141,3 +141,10 @@ footer {
     background-color: var(--raisin-black-2);
     color: var(--french-gray);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 4em 4em;
+    }
+    
+}

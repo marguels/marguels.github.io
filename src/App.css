@@ -4,7 +4,12 @@
 
 main {
     padding-top: 60px;
+    align-self: center;
     max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -20,7 +25,6 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    margin: 4em 4em;
 }
 
 .logo {
@@ -40,7 +44,8 @@ main {
 
   @media screen and (max-width: 480px){
     .navBar {
-        gap: 3em;
+        gap: 2em;
+        font-size: 0.7em;
     }
     
   }

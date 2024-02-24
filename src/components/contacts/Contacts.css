@@ -21,6 +21,21 @@
 }
 
 .contact-icon:hover  .contact-text{
-    /* display: inline; */
     visibility: visible;
 }
+
+
+@media screen and (max-width: 480px){
+    .contacts-section {
+        gap: 0.5em;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    .contacts-section {
+        gap: 0.5em;
+    }
+    
+}
+

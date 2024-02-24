@@ -51,11 +51,16 @@
     justify-content: space-around;
     gap: 0.5rem;
   }
-
+  
+  .hello-world {
+    display: flex;
+    gap: 1rem;
+  }
 
   @media screen and (max-width: 768px){    
     .terminal {
       width: 80%;
+      margin: 0;
     }
 
     .ascii-container {
@@ -63,11 +68,22 @@
       align-items: center;
       gap: 0;
     }
+
+  
     
   }
 
   @media screen and (max-width: 480px){
+    .terminal {
+      width: 80%;
+    }
     .output {
       height: 35em;
+    }
+
+    .hello-world {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
     }
   }

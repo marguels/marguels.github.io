@@ -81,7 +81,12 @@ nav {
 
 main {
     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    margin: 0;
+    gap: 2em;
 }
 
 h1 {
@@ -145,6 +150,24 @@ footer {
 @media screen and (max-width: 768px) {
     .container {
         padding: 4em 4em;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        max-width: 400px;
+    }
+
+    .container {
+        padding: 1em 2em;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    .container {
+        padding: 0.5em 1em;
     }
     
 }
